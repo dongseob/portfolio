@@ -8,7 +8,7 @@
 .mouseover>div
 {
 	float: left; 
-	width: 33.33%; 
+	height: 33.33%; 
 }
 .h3
 {
@@ -25,7 +25,6 @@ figure.text-switching
 	overflow: hidden;
 	margin: 10px;
 	max-height: 60%;
-	max-width: 100%;
 	background: #000000;
 	color: #ffffff;
 	text-align: left;
@@ -124,7 +123,6 @@ figure.easing-zoom
 	overflow: hidden;
 	margin: 10px;
 	max-height: 60%;
-	max-width: 100%;
 	background: #000000;
 	color: #ffffff;
 	text-align: center;
@@ -265,7 +263,6 @@ figure.area-extension
 	overflow: hidden;
 	margin: 10px;
 	max-height: 60%;
-	max-width: 100%;
 	background: #000000;
 	color: #ffffff;
 	text-align: center;
