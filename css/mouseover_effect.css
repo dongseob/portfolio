@@ -77,7 +77,7 @@ figure.text-switching h2
 }
 figure.text-switching h3 
 {
-	font-size: 0.85em;
+	font-size: 2em;
 	bottom: 0;
 	font-weight: 500;
 }
@@ -187,12 +187,14 @@ figure.easing-zoom p
 	width: auto;
 	text-transform: uppercase;
 	font-weight: 400;
+	font-size: 2.2em;
 }
 
 figure.easing-zoom h3 span,
 figure.easing-zoom p span 
 {
 	font-weight: 800;
+	font-size: 1em;
 }
 
 figure.easing-zoom h3:before,
@@ -228,7 +230,7 @@ figure.easing-zoom h3:after
 
 figure.easing-zoom p 
 {
-	font-size: 0.7em;
+	font-size: 1.5em;
 	font-weight: 500;
 }
 
@@ -268,7 +270,6 @@ figure.area-extension
 	color: #ffffff;
 	text-align: center;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	font-size: 16px;
 	box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
 }
 figure.area-extension * 
@@ -314,10 +315,12 @@ figure.area-extension h2
 	width: auto;
 	text-transform: uppercase;
 	font-weight: 400;
+	font-size: 30px;
 }
 figure.area-extension h2 span 
 {
 	font-weight: 800;
+	font-size: 1em;
 }
 figure.area-extension h2:before,
 figure.area-extension h2:after 
@@ -349,7 +352,7 @@ figure.area-extension p
 	margin: 0;
 	opacity: 0;
 	line-height: 1.6em;
-	font-size: 0.9em;
+	font-size: 1.7em;
 }
 figure.area-extension a 
 {
