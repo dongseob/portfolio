@@ -106,6 +106,6 @@ html, body{font-size: 8px; }
 	.imgSection .block{width: 100%; min-width: 200px;}
 	.graphic{clear: both;}
 	.graphic img{width: 300%; margin-left: -100%;}
-	.article {margin-bottom: 10px;}
-	.layerPopup{padding: 5%;}
+	.aboutSection .profile{height: 400px;}
+
 }
