@@ -98,7 +98,7 @@ html, body{font-size: 8px; }
 	.skills .bar .chart{line-height: 100px;}
 	.skills .bar canvas {top: 50%; margin-top: -35px; left: 50%; margin-left: -35px; }
 	.con2{margin-top: 20%;}
-	.mouseover{height: 60%;}
+	.mouseover{height: 50%;}
 	figcaption .heading h2:nth-child(1n){font-size: 10px;}
 	figcaption .caption:nth-child(1n){font-size: 3px;}
 	figcaption:nth-child(2n) .heading h3{font-size: 10px; }
