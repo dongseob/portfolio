@@ -17,7 +17,7 @@ body {background: #06416B;color: #d7e7f3;font-family: 'BMHANNAAir';line-height: 
 }
 h1 {width: 98%; font-size: 10rem;font-weight: 200;letter-spacing: 1px;text-transform: uppercase;line-height: 1.2; margin: 0 auto; margin-bottom: 20px;}
 .main > h1 {width: 70%;}
-h2 {font-weight: 300;font-size: 3.5rem;line-height: 1.5; color: #779dba;margin: 0 auto; margin-bottom: 50px; }
+h2 {font-weight: 300;font-size: 3.5rem;line-height: 1.5; color: #779dba;margin: 0 auto; margin-bottom: 5%; }
 h3 {font-weight: 500;font-size: 2rem;line-height: 1.5; color: #d7e7f3;margin: 0 auto;}
 strong{font-size: 2rem;}
 section {width: 100%; height: 100vh; overflow: hidden !important;position: relative; }
@@ -30,8 +30,11 @@ section.block:nth-child(2n) {background: hsl(205, 84%, 14%);}
 section.block:nth-child(3n) {background: hsl(205, 90%, 22%);}
 
 /*  호버 이벤트  */
+
 .hoverEvent{}
 .hoverEvent > figure{overflow: hidden; display: flex; align-items: center; height: 0 !important; padding: 30% 0;}
+.con2 .title{margin-top: 5%;}
+.con2 {height: 100%;}
 
 
 /*  사진관  */
@@ -54,9 +57,9 @@ section.block:nth-child(3n) {background: hsl(205, 90%, 22%);}
 50% {transform: translate(0, 5px) scale(0.8, 0.8);}
 100% {transform: translate(0, 0) scale(1.0, 1.0);}
 }
-.skills {width: 33%; float: left; margin: 0 auto; margin-bottom: -30px;}
+.skills {width: 33%; float: left; margin: 0 auto; }
 /*.skills .bar {width: 100%; height: 100%; }*/
-.skills .bar .chart {position: relative;margin: 0 auto;font-size: 3rem;line-height: 125px;text-align: center; margin-bottom: 20px;}
+.skills .bar .chart {position: relative;margin: 0 auto;font-size: 3rem;line-height: 125px;text-align: center; margin-top: 8%;}
 .skills .bar canvas {position: absolute;top: 50%; margin-top: -65px; left: 50%; margin-left: -65px;}
 .profile {border: 1.5px solid #779dba;width: 80%;margin: 0 auto;overflow: hidden; padding: 5%; }
 .article {float: left;text-align: left; display: block;clear: left; margin-bottom: 30px;}
@@ -91,10 +94,18 @@ section.block:nth-child(3n) {background: hsl(205, 90%, 22%);}
 @media screen and (max-width:480px) {
 html, body{font-size: 8px; }
 	h1 {width: 98%;font-size: 4.5rem; margin-bottom: 10px;}
-	h2{font-size: 2.5rem; }
+	h2{font-size: 2.5rem; width: 90%;}
 	.skills .bar .chart{line-height: 100px;}
 	.skills .bar canvas {top: 50%; margin-top: -35px; left: 50%; margin-left: -35px; }
+	.con2{margin-top: 20%;}
+	.mouseover{height: 70%;}
+	figcaption .heading h2:nth-child(1n){font-size: 12px;}
+	figcaption .caption:nth-child(1n){font-size: 3px;}
+	figcaption:nth-child(2n) .heading h3{font-size: 10px;}
+	figcaption .caption:nth-child(2n){font-size: 3px; margin-bottom: -10px;} 
+	.imgSection .block{width: 100%; min-width: 200px;}
+	.graphic{clear: both;}
+	.graphic img{width: 300%; margin-left: -100%;}
 	.article {margin-bottom: 10px;}
 	.layerPopup{padding: 5%;}
-	.imgsection h1{ font-size: 10rem;}
 }
