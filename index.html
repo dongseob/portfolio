@@ -17,11 +17,9 @@
   <link href="css/mouseover_effect.css" rel="stylesheet" />
 
   <script src="script/jquery-3.4.0.js"></script>
-  <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
   <script src="fullPage.js-master/dist/fullpage.js"></script>
   <script src="script/script.js"></script>
   <script src="script/jquery.mousewheel.js"></script>
-  <!--<script src="/script/custom.js"></script>-->
 </head>
 
 <body>
@@ -200,99 +198,7 @@
   <svg viewBox="0 0 60 60">
     <path d="M52.254 18.327c0.816-0.804 2.127-0.804 2.937 0s0.813 2.103 0 2.907l-23.724 23.49c-0.81 0.804-2.121 0.804-2.937 0l-23.724-23.49c-0.81-0.804-0.81-2.103 0-2.907 0.813-0.804 2.127-0.804 2.937 0l22.257 21.423 22.254-21.423z"></path>
   </svg>
-  <script type="text/javascript">
-    $(function() {
-      $('#fullpage').fullpage({
-        //options here
-        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-        easingcss3: 'ease',
-        scrollBar: true
-      });
-      var ww = $(window).width();
-      var wh = $(window).height();
-      $(window).on('scroll', function() {
-        if ($(window).scrollTop() > $('.chartSection').offset().top - 200) {
-          if (ww >= 480) {
-            $('.chart').easyPieChart({
-              size: 130,
-              barColor: '#FF3636',
-              scaleColor: false,
-              lineWidth: 10,
-              trackColor: '#fff'
-            });
-          } else {
-            $('.chart').easyPieChart({
-              size: 70,
-              barColor: '#FF3636',
-              scaleColor: false,
-              lineWidth: 5,
-              trackColor: '#fff'
-            });
-          }
-        }
-      });
-
-
-
-      var scrollHeight = 0;
-      var thisTop = 0;
-      $('.graphic img').on('click', function() {
-
-        scrollHeight = $(window).scrollTop(); // 열렸을떄 scrollTop 체크 (var 쓰지않기. 팝업오픈했을때만사용하기위한 변수)
-        var thisTop = $('.imgSection').offset().top;
-        var onTop = thisTop - scrollHeight;
-        console.log(onTop);
-        //$(window).scrollTop(onTop);
-        $('body').addClass('bgFixed');
-        $('body').on('scroll touchmove mousewheel', function(event) {
-          event.preventDefault();
-          event.stopPropagation();
-
-          return false;
-        });
-        $('#fullpage').css({
-          "position": "fixed",
-          'top': -scrollHeight
-        });
-
-        var imgTag = $(this).parent().html();
-        $('.imgBox').append(imgTag);
-        $('.layerBG').fadeIn(400);
-        // $('.imgBox').off('scroll touchmove mousewheel');
-        closeLayer(scrollHeight);
-      });
-    });
-
-    function closeLayer(scrollHeight) {
-      //레이어 닫기
-      var checkBoxBG = $('.layerBG');
-      $('.layerBG').on('click', function(e) {
-        if (checkBoxBG.has(e.target).length === 0) {
-          $("body").removeClass("bgFixed"); //overflow-hidden 해제(스크롤 해제)
-          $('body').off('scroll touchmove mousewheel');
-          $("#fullpage").css({
-            "position": "relative",
-            "top": "0"
-          });
-          $(window).scrollTop(scrollHeight); //현재 스크롤된값=보이는화면 
-          $('.imgBox').empty();
-          checkBoxBG.fadeOut(600);
-        }
-      });
-
-      $('.closeBtn').on('click', function() {
-        $("body").removeClass("bgFixed"); //overflow-hidden 해제(스크롤 해제)
-        $('body').off('scroll touchmove mousewheel');
-        $("#fullpage").css({
-          "position": "relative",
-          "top": "0"
-        });
-          $(window).scrollTop(scrollHeight); //현재 스크롤된값=보이는화면 
-        $('.imgBox').empty();
-        $('.layerBG').fadeOut(600);
-      });
-    }
-  </script>
+  
 </body>
 
 </html>

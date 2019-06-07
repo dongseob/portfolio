@@ -58,12 +58,11 @@ section.block:nth-child(3n) {background: hsl(205, 90%, 22%);}
 100% {transform: translate(0, 0) scale(1.0, 1.0);}
 }
 .skills {width: 33%; float: left; margin: 0 auto; }
-/*.skills .bar {width: 100%; height: 100%; }*/
 .skills .bar .chart {position: relative;margin: 0 auto;font-size: 3rem;line-height: 125px;text-align: center; margin-top: 8%;}
 .skills .bar canvas {position: absolute;top: 50%; margin-top: -65px; left: 50%; margin-left: -65px;}
-.profile {border: 1.5px solid #779dba;width: 80%;margin: 0 auto;overflow: hidden; padding: 5%; }
+.profile {border: 1.5px solid #779dba; width: 80%; margin: 0 auto; overflow: hidden; padding: 3%; }
 .article {float: left;text-align: left; display: block;clear: left; margin-bottom: 30px;}
-.article h2 {font-size: 2rem;line-height: 1.5; margin-bottom: 0; }
+.article h2 {font-size: 2rem; line-height: 1.5; margin-bottom: 0;}
 .article2 {display: inline-block;align-items: center; }
 .article2 .line-height h2{ line-height: 40px;}
 .article2 .line-height strong{color: #d7e7f3; }
@@ -87,7 +86,6 @@ section.block:nth-child(3n) {background: hsl(205, 90%, 22%);}
 	.mouseover h2,h3{position: fix}
 	.hoverEvent{width: 40% !important; float: none !important; margin: 0 auto; }
 	.hoverEvent > figure{height: 0 !important; padding: 30% 0; }
-	/*.article {padding-left: 10%;}*/
 	.article {margin-bottom: 20px;}
 }
 
@@ -98,11 +96,11 @@ html, body{font-size: 8px; }
 	.skills .bar .chart{line-height: 100px;}
 	.skills .bar canvas {top: 50%; margin-top: -35px; left: 50%; margin-left: -35px; }
 	.con2{margin-top: 20%;}
-	.mouseover{height: 60%;}
-	figcaption .heading h2:nth-child(1n){font-size: 10px;}
-	figcaption .caption:nth-child(1n){font-size: 3px;}
-	figcaption:nth-child(2n) .heading h3{font-size: 10px; }
-	figcaption .caption:nth-child(2n){font-size: 3px; margin-bottom: -10px;} 
+	.mouseover{height: 70%;}
+	figcaption .heading h2:nth-child(1n){font-size: 15px;}
+	figcaption .caption:nth-child(1n){font-size: 5px;}
+	figcaption:nth-child(2n) .heading h3{font-size: 7px; }
+	figcaption .caption:nth-child(2n){font-size: 6px; margin-bottom: -15px;} 
 	.imgSection .block{width: 100%; min-width: 200px;}
 	.graphic{clear: both;}
 	.graphic img{width: 300%; margin-left: -100%;}
