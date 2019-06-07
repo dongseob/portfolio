@@ -95,12 +95,12 @@ html, body{font-size: 8px; }
 	h2{font-size: 2.5rem; width: 90%;}
 	.skills .bar .chart{line-height: 100px;}
 	.skills .bar canvas {top: 50%; margin-top: -35px; left: 50%; margin-left: -35px; }
-	.con2{margin-top: 20%;}
-	.mouseover{height: 70%;}
+	.con2{margin-top: 30%;}
+	.mouseover{height: 60%;}
 	figcaption .heading h2:nth-child(1n){font-size: 15px;}
-	figcaption .caption:nth-child(1n){font-size: 5px;}
+	figcaption .caption:nth-child(1n){font-size: 4px;}
 	figcaption:nth-child(2n) .heading h3{font-size: 7px; }
-	figcaption .caption:nth-child(2n){font-size: 6px; margin-bottom: -15px;} 
+	figcaption .caption:nth-child(2n){font-size: 3px; margin-bottom: -20px;} 
 	.imgSection .block{width: 100%; min-width: 200px;}
 	.graphic{clear: both;}
 	.graphic img{width: 300%; margin-left: -100%;}
