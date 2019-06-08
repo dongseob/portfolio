@@ -82,10 +82,13 @@ section.block:nth-child(3n) {background: hsl(205, 90%, 22%);}
 	.profile {width: 90%; }
 	.graphic > div{float: left; width: 50%; height: auto; padding: 0 5%; }
 	.layerPopup{width: 95%; height: 90%;top: 5%; background-color: #fff; left: 2.5%; margin: 0; padding: 3%; }
+	.con2{margin-top: 15%;}
 	.mouseover{display: block !important; }
 	.mouseover h2,h3{position: fix}
+	figcaption .caption:nth-child(2n){font-size: 7px;} 
 	.hoverEvent{width: 40% !important; float: none !important; margin: 0 auto; }
 	.hoverEvent > figure{height: 0 !important; padding: 30% 0; }
+	.graphic img{width: 300%; margin-left: -100%;}
 	.article {margin-bottom: 20px;}
 }
 
@@ -96,7 +99,7 @@ html, body{font-size: 8px; }
 	h2{font-size: 2.5rem; width: 90%;}
 	.skills .bar .chart{line-height: 100px;}
 	.skills .bar canvas {top: 50%; margin-top: -35px; left: 50%; margin-left: -35px; }
-	.con2{margin-top: 10%;}
+	.con2{margin-top: 5%;}
 	.mouseover{height: 70%;}
 	figcaption .heading h2:nth-child(1n){font-size: 15px;}
 	figcaption .caption:nth-child(1n){font-size: 4px;}
