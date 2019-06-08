@@ -97,7 +97,7 @@ html, body{font-size: 8px; }
 	.skills .bar .chart{line-height: 100px;}
 	.skills .bar canvas {top: 50%; margin-top: -35px; left: 50%; margin-left: -35px; }
 	.con2{margin-top: 10%;}
-	.mouseover{height: 70%;}
+	.mouseover{height: 65%;}
 	figcaption .heading h2:nth-child(1n){font-size: 15px;}
 	figcaption .caption:nth-child(1n){font-size: 4px;}
 	figcaption:nth-child(2n) .heading h3{font-size: 7px; }
@@ -105,6 +105,7 @@ html, body{font-size: 8px; }
 	.imgSection .block{width: 100%; min-width: 200px;}
 	.graphic{clear: both;}
 	.graphic img{width: 300%; margin-left: -100%;}
-	.aboutSection .profile{height: 450px; overflow-y: auto;}
-	.aboutSection .profile h2{width: 100%;}
+	.aboutSection .profile{height: 450px; line-height: 15px; overflow-y: scroll;}
+	.aboutSection .profile h2{width: 100%; font-size: 12px;}
+	.aboutSection .profile strong{line-height: 0;}
 }
