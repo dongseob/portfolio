@@ -474,7 +474,6 @@ section.block:nth-child(3n)
 	figcaption .caption:nth-child(2n)
 	{
 		font-size: 3px; 
-		margin-bottom: -15px;
 	} 
 	.imgSection .block
 	{
