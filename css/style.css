@@ -15,8 +15,8 @@ html,body *
 	position: fixed;
 	display: block;
 	z-index: 9999;
-	top: 2%; 
-	left: 1%;
+	top: 3%; 
+	left: 2%;
 }
 #fullpage
 {
@@ -92,7 +92,6 @@ section > div > div
 	height: auto; 
 	margin: 0 auto;
 	position: relative; 
-	margin: 0 auto; 
 }
 svg 
 {
@@ -101,6 +100,11 @@ svg
 	width: 30px;
 	animation: chevronAnimation 4s ease-in-out 0s infinite; 
 	margin-left: -15px; 
+}
+@keyframes chevronAnimation {
+	0% {transform: translate(0, 0) scale(1.0, 1.0);}
+	50% {transform: translate(0, 5px) scale(0.8, 0.8);}
+	100% {transform: translate(0, 0) scale(1.0, 1.0);}
 }
 svg path 
 {
@@ -120,6 +124,7 @@ section.block:nth-child(3n)
 }
 
 
+
 /*  메인 섹션  */
 .main > h1 
 {
@@ -130,16 +135,13 @@ section.block:nth-child(3n)
 .skills 
 {
 	width: 33%; 
-	float: left; 
-	margin: 0 auto; 
+	float: left;
 }
 .skills .bar .chart 
 {
 	position: relative;
-	margin: 0 auto;
 	font-size: 3rem;
-	line-height: 125px;
-	text-align: center; 
+	line-height: 125px; 
 	margin-top: 8%;
 }
 .skills .bar canvas 
@@ -147,36 +149,18 @@ section.block:nth-child(3n)
 	position: absolute;
 	top: 50%; 
 	margin-top: -65px; 
-	left: 50%; 
 	margin-left: -65px;
+	left: 50%; 
 }
 
 
-/*  마우스오버 섹션  */
-.hoverEvent > figure
-{
-	overflow: hidden; 
-	display: flex; 
-	align-items: center; 
-	height: 0 !important; 
-	padding: 30% 0;
-}
-.con2 .title
-{
-	margin-top: 5%;
-}
-.con2 
-{
-	height: 100%;
-}
+/*  마우스오버 섹션(mousever_effect.css참고)  */
+
 
 
 /*  그래픽 섹션  */
 .graphic
 {
-	width: 100%; 
-	height: 100%; 
-	float: center; 
 	width: 50%; 
 	height: auto; 
 	padding: 0 15%; 
@@ -219,7 +203,7 @@ section.block:nth-child(3n)
 	left: 50%; 
 	margin-left: -400px; 
 	border-radius: 20px; 
-	padding: 1.5%; 
+	padding: 1%; 
 }
 .layerPopup > button
 {
@@ -238,28 +222,15 @@ section.block:nth-child(3n)
 }
 .imgBox
 {
-	height: 100%; 
 	width: 100%; 
+	height: 100%; 
 	overflow-y: auto; 
 }
 .imgBox img
 {
 	width: 100%; 
 }
-.bgFixed
-{
-	overflow: hidden !important; 
-}
-.imgSection
-{
-	z-index: 5000; 
-}
 
-@keyframes chevronAnimation {
-	0% {transform: translate(0, 0) scale(1.0, 1.0);}
-	50% {transform: translate(0, 5px) scale(0.8, 0.8);}
-	100% {transform: translate(0, 0) scale(1.0, 1.0);}
-}
 
 
 /*  어바웃 섹션  */
@@ -274,21 +245,18 @@ section.block:nth-child(3n)
 .article 
 {
 	float: left;
-	text-align: left; 
-	display: block;
+	text-align: left;
 	clear: left; 
 	margin-bottom: 30px;
 }
 .article h2 
 {
 	font-size: 2rem; 
-	line-height: 1.5; 
 	margin-bottom: 0;
 }
 .article2 
 {
 	display: inline-block;
-	align-items: center; 
 }
 .article2 .line-height h2
 {
@@ -331,6 +299,11 @@ section.block:nth-child(3n)
 
 @media screen and (max-width:800px) 
 {
+	#logo
+	{	
+		top: 2%;
+		left: 3%;
+	}
 	html, body
 	{
 		font-size: 8px; 
@@ -338,7 +311,7 @@ section.block:nth-child(3n)
 	h1 
 	{
 		width:98%; 
-		font-size: 7rem; 
+		font-size: 8rem; 
 		margin-bottom: 15px;
 	}
 	h2
@@ -474,6 +447,7 @@ section.block:nth-child(3n)
 	figcaption .caption:nth-child(2n)
 	{
 		font-size: 3px; 
+		margin-bottom: -5px;
 	} 
 	.imgSection .block
 	{

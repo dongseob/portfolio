@@ -16,6 +16,21 @@
 	float: center;
 	display: flex;
 }
+.hoverEvent > figure
+{
+	display: flex; 
+	align-items: center; 
+	height: 0 !important; 
+	padding: 30% 0;
+}
+.con2 .title
+{
+	margin-top: 5%;
+}
+.con2 
+{
+	height: 100%;
+}
 
 figure.text-switching 
 {
