@@ -161,7 +161,7 @@ section.block:nth-child(3n)
 /*  그래픽 섹션  */
 .graphic
 {
-	width: 50%; 
+	width: 100%; 
 	height: auto; 
 	padding: 0 15%; 
 	margin: 0 auto;  
@@ -172,10 +172,17 @@ section.block:nth-child(3n)
 	display: block; 
 	clear: both; 
 }
+.graphic > div:nth-child(2) > img:not(:first-child){
+	display: none;
+}
+.graphic div{
+	display: inline;
+}
 .graphic img
 {
-	width: 100%; 
-	cursor: pointer; 
+	width: 30%; 
+	cursor: pointer;
+	padding: 10px;
 }
 .graphic img:hover
 {
@@ -282,9 +289,8 @@ section.block:nth-child(3n)
 		font-size: 9rem; 
 		margin-bottom: 20px;
 	}
-	.graphic > div
-	{
-		padding: 0 15%; 
+	.graphic img{
+		width : 40%;
 	}
 	section > div 
 	{
@@ -328,13 +334,6 @@ section.block:nth-child(3n)
 	{
 		width: 90%; 
 	}
-	.graphic > div
-	{
-		float: left; 
-		width: 50%; 
-		height: auto; 
-		padding: 0 5%; 
-	}
 	.layerPopup
 	{
 		width: 95%; 
@@ -376,10 +375,17 @@ section.block:nth-child(3n)
 		height: 0 !important; 
 		padding: 30% 0; 
 	}
+	.graphic{
+		width: 90%;
+	}
+	.graphic > div
+	{
+		width: 15%; 
+		height: auto; 
+	}
 	.graphic img
 	{
-		width: 300%; 
-		margin-left: -100%;
+		width: 60%; 
 	}
 	.imgSection .block h2
 	{
@@ -456,12 +462,12 @@ section.block:nth-child(3n)
 	}
 	.graphic
 	{
+		width: 100%;
 		clear: both;
 	}
 	.graphic img
 	{
-		width: 300%; 
-		margin-left: -100%;
+		width: 60%; 
 	}
 	.aboutSection .profile
 	{
