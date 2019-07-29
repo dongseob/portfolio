@@ -183,11 +183,11 @@ section.block:nth-child(3n)
 	width: 30%; 
 	cursor: pointer;
 	padding: 10px;
+	transition: all 0.3s ease-in-out;
 }
 .graphic img:hover
 {
 	opacity: 0.5;
-	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
 .layerBG

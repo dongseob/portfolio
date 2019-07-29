@@ -1,0 +1,17 @@
+.ImitationSection .imitation_img img{
+    margin: 30px 20px;
+    transition: all 0.3s ease-in-out;
+    width :40%;
+}
+.ImitationSection .imitation_img img:hover{
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+.imitation1{
+    display: inline;
+    position: relative;
+}
+.imitation2{
+    display: inline;
+    position: relative;
+}
