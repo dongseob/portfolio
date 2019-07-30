@@ -1,6 +1,6 @@
 .ImitationSection .imitation_img img{
     margin: 0 20px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-out;
     width :40%;
 }
 .ImitationSection .imitation_img img:hover{
