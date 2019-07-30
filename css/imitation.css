@@ -1,5 +1,5 @@
 .ImitationSection .imitation_img img{
-    margin: 30px 20px;
+    margin: 0 20px;
     transition: all 0.3s ease-in-out;
     width :40%;
 }
