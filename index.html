@@ -240,29 +240,30 @@
   <link rel="stylesheet" href="css/quick_menu.css">
   <script>
     $(function(){
+      // 구해하는 값은 각 컨테츠의 높이 (body에서의)
       $('.quick_menu>li:nth-child(1)').on('click', function(e){
           e.preventDefault();
-          $('html,body').stop().animate({'scrollTop':0},1000)
+          $('html,body').stop().animate({'scrollTop':$('#fullpage > section').eq(0).offset().top},1000)
       });
       $('.quick_menu>li:nth-child(2)').on('click', function(e){
           e.preventDefault();
-          $('html,body').stop().animate({'scrollTop':722},1000)
+          $('html,body').stop().animate({'scrollTop':$('#fullpage > section').eq(1).offset().top},1000)
       });
       $('.quick_menu>li:nth-child(3)').on('click', function(e){
           e.preventDefault();
-          $('html,body').stop().animate({'scrollTop':1444},1000)
+          $('html,body').stop().animate({'scrollTop':$('#fullpage > section').eq(2).offset().top},1000)
       });
       $('.quick_menu>li:nth-child(4)').on('click', function(e){
           e.preventDefault();
-          $('html,body').stop().animate({'scrollTop':2166},1000)
+          $('html,body').stop().animate({'scrollTop':$('#fullpage > section').eq(3).offset().top},1000)
       });
       $('.quick_menu>li:nth-child(5)').on('click', function(e){
           e.preventDefault();
-          $('html,body').stop().animate({'scrollTop':2888},1000)
+          $('html,body').stop().animate({'scrollTop':$('#fullpage > section').eq(4).offset().top},1000)
       });
       $('.quick_menu>li:nth-child(6)').on('click', function(e){
           e.preventDefault();
-          $('html,body').stop().animate({'scrollTop':3610},1000)
+          $('html,body').stop().animate({'scrollTop':$('#fullpage > section').eq(0).offset().top},1000)
       });
   })
 </script>

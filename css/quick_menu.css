@@ -15,7 +15,8 @@
     border-radius: 50%;
     background-color:#d7e7f3;
     transform: scale(1);
-	transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .quick_menu > li > em {
     display: block;
