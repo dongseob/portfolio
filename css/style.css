@@ -484,4 +484,14 @@ section.block:nth-child(3n)
 	{
 		line-height: 0;
 	}
+	.quick_menu{
+		right: 15px !important;
+		top: 100px !important;
+		font-size: 50% !important;
+	}
+	.quick_menu em{
+		/* display: none !important; */
+		font-size: 100% !important;
+		margin-top: 5px;
+	}
 }
