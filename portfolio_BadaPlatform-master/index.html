@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto', sans-serif;
+		}
+		header{
+			background-image: linear-gradient(to bottom right, #2e3797, #18b4e6);
+			width: 100%;
+			height: 100%;
+			position: fixed;
+		}
+		header .menu1>li>a{
+			font-size: 20px;
+		}
+		header nav{
+			padding: 3% 2%;
+			letter-spacing: -0.5px;
+		}
+		header>nav>ul{
+			position: absolute;
+			float: left;
+			display: flex;
+			list-style: none;
+			top: 6%;
+			right: 30px;
+		}
+		li a{
+			color: #ffffff;
+			text-decoration: none;
+		}
+		.menu1>li>a{
+      		position:relative;
+			padding: 35px;
+			color:#9cc2e6;
+			font-weight: 700;
+		}
+		
+		.menu2{
+			list-style: none;
+			text-align: left;
+			padding : 0;
+			background: #ffffff;
+			padding: 30px;
+			margin-top: 25px;
+			position: absolute;
+			width: 27%;
+			z-index: 9999;
+		}
+		#menu21{
+			margin-left: -28px;
+		}
+		#menu22{
+			width: 15%;
+			margin-left: 2px;
+		}
+		.menu2 a{
+			color: #000000;
+			display: inline-block;
+		}
+		nav>ul>li>a+ul{
+			display: none;
+		}
+		nav>ul>li:hover>a+ul{
+			display: block;
+		}
+		.menu2>li{
+			line-height: 40px;
+			padding-left: 18px;
+			float: center;
+		}
+		header .menu2:before {
+			position: absolute;
+			display: block;
+			content: '';
+			top: -6px;
+			left: 50%;
+			margin-left: -3px;
+			width: 10px;
+			height: 6px;
+			background: url(img/depth02_arrow.png) no-repeat 50%;
+		}
+
+
+		.title{
+			margin: 100px 30px;
+			font-size: 20px;
+			position: absolute;
+		}
+		.title strong{
+			font-size: 95px;
+			color: #ffffff;
+			letter-spacing: 2px;
+		}
+		.title p{
+			color:#45aad8;
+			line-height: 1px;
+			padding-top: 10px;
+			font-style: oblique;
+		}
+
+
+		.title_img img{
+			position: absolute;
+			width: 34%;
+			right: 35px;
+			margin-top: 40px;
+		}
+
+		.title_low{
+			border-top: 1px solid rgba(255,255,255,.25);
+			width: 95%;
+			margin-left: 2.5%;
+			position: relative;
+			top: 470px;
+			height: 100px;
+		}
+		.title_open{
+			position: absolute;
+			left: 470px;
+			line-height: 10px;
+			top: 20px;
+			padding: 10px;
+		}
+		.title_open a{
+			text-decoration: none;
+			font-weight: bold;
+			color: #ffffff;
+			font-size: 14px;
+		}
+		.title_open img{
+			margin-left: 10px;
+			transition: all 0.5s;
+		}
+		.title_open:hover img{
+			transform:translatex(10px);
+		}
+		.title_open p{
+			font-size: 13px;
+			line-height: 34px;
+			font-weight: 300;
+			color: #dfdfdf;
+			margin-top: 5px;
+		}
+		.title_menu{
+			position: absolute;
+			right: 90px;
+			margin-top: 15px;
+			padding: 10px;
+		}
+		.title_menu img{
+			transition: all 0.5s;
+		}
+		.title_menu:hover img{
+			transform:translatex(10px);
+		}
+
+		header nav .menu1 > li:hover>a{
+			color: #fff;
+		}
+		header nav .menu1 > li:before {
+			position: relative;
+			display: block;
+			content: '';
+			left: 50%;
+			top: -10px;
+			margin-left: -2.5px;
+			width: 5px;
+			height: 5px;
+			background-color: #fff;
+			border-radius: 50%;
+			transform: scale(0);
+			transition: all 0.15s ease-in-out;
+		}
+		header nav .menu1 > li:hover:before {
+			transform: scale(1);
+			transition: all 0.2s ease-in-out;
+		}
+		header nav .menu1 li ul li a:hover{
+			font-size: 17px;
+			font-weight: 530;
+			transition: all 0.3s ease-in-out;
+		}
+		header nav .menu1 li ul li a:after {
+			content: "";
+			display: block;
+			position: relative;
+			height: 2px;
+			top:-5px;
+			background: #333;
+			transition: all 0.3s;
+			transform: scaleX(0);
+			width: 100% auto;
+		}
+
+		header nav .menu1 li ul li a:hover:after {
+			transform: scaleX(1);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#"><img src="img/logo.png" alt="logo"></a>
+			<ul class="menu1">
+				<li>
+					<a href="#">Bada Platform</a>
+					<ul class="menu2" id="menu21">
+						<li><a href="#">Bada-Device Platform</a></li>
+						<li><a href="#">Bada-loT Platform</a></li>
+						<li><a href="#">Bada-Big data Platform</a></li>
+						<li><a href="#">Application Services</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Developers</a>
+					<ul class="menu2" id="menu22">
+						<li><a href="#">Supports</a></li>
+						<li><a href="#">Q&A</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Notice</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</nav>
+		<div class="title">
+			<strong>Bada Platform</strong>
+			<p>Powerful IoT/Big Data Platform</p>
+			<p>for Ship and Shipbuilding Industry</p>
+		</div>
+		<div class="title_img">
+			<img src="img/main_visual.png" alt="title_img">
+		</div>
+		<div class="title_low">
+			<div class="title_open">
+				<a href="#">
+					바다플랫폼 리뉴얼 오픈
+					<img src="img/arrow_next.png" alt="arrow_next">
+				</a>
+				<p>2019.07.01</p>
+			</div>
+			<div class="title_menu">
+				<a href="#">
+					<img src="img/btn_go_notice.png" alt="?">
+				</a>
+			</div>
+
+		</div>
+	</header>
+</body>
+</html>

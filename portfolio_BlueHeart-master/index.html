@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #f2f1ea;
+            font-family: 'Londrina Solid', cursive;
+            width : 100%;
+            letter-spacing: 0.5px;
+            display: block;
+        }
+        a{
+            text-decoration: none;
+        }
+        /* ////////////////header/////////// */
+        header>nav{
+            position: relative;
+            z-index: 9999;
+        }
+        header>nav>a{
+            position : absolute;
+            margin: 20px 30px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+        .nav2{
+            left: 130px;
+        }
+        .nav3{
+            left: 48%;
+            width: 100%;
+            transform: translateX(-50%);
+            text-align: center;
+            filter: brightness(0%);
+            overflow: hidden;
+            text-indent: 100%;
+            background: url(img/logo-patagonia.svg)center center/contain no-repeat
+        }
+        .nav4{
+            right: 20px;
+            background-color: #ef4923;
+            color: #fff;
+            padding: 11px 20px;
+            border-radius: 20px;
+            margin: 9px 10px;
+            z-index: 9999;
+            transition: all 0.5s;
+        }
+
+        .nav4:hover{
+            color: #ef4923;
+            background: #fff;
+        }
+
+        header::before {
+    background: linear-gradient(rgba(242,241,234,0.1), rgba(242,241,234,0));
+    bottom: 0;
+    content: '';
+    height: 60px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity .5s,background .5s;
+    top: 0;
+    will-change: opacity, background;
+}
+        /* ////////////////header/////////// */
+
+        /* ///////////section/////////// */
+        section{
+            position: relative;
+        }
+        .center{
+            text-align: center;
+            text-transform: uppercase;
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            z-index: 9999;
+        }
+        .center h1{
+            background: url(img/logo.png)center center/contain no-repeat;
+            bottom: 0;
+            height: 377px;
+            width: 510px;
+            display: inline-block;
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+        }
+        .center p{
+            max-width: 215px;
+            font-size: 18px;
+            margin: 0 auto 5em;
+        }
+        .center a{
+            color: #fff;
+            padding: 11px 20px;
+            background: #ef4923;
+            border-radius: 20px;
+            transition: all 0.5s;
+            position : relative;
+        }
+        .center a:hover{
+            color: #ef4923;
+            background: #fff;
+        }
+
+        .mountain{
+            width: 100%;
+            position: relative;
+            top: 90px;
+            z-index: -1;
+        }
+        .mountain1{
+            width: 100%;
+            position : absolute;
+            max-height: 200vh;
+        }
+        .mountain2{
+            width: 100%;
+            position : absolute;
+            max-height: 200vh;
+        }
+        .mountain3{
+            width: 100%;
+            position : absolute;
+            max-height: 200vh;
+        }
+        .mountain4{
+            width: 100%;
+            position : absolute;
+            max-height: 200vh;
+        }
+
+        .cloud{
+            position: absolute;
+        }
+        .cloud1{
+            margin-top: 100px;
+        }
+        .cloud3{
+            margin-top: -200px;
+        }
+        /* ///////////section/////////// */
+
+        /* //////////////content//////////////// */
+        content{
+            display: flex;
+            width: 100%;
+            position: relative;
+            top: 900px;
+            float: center;
+        }
+        .con{
+            display: inline-block;
+            position: relative;
+            padding: 130px 0 0 50px;
+            transform: translateX(85%);
+            margin: 0 20px;
+        }
+        .con h4{
+            position: absolute;
+            left: 0;
+            color: #ef4923;
+            font-size: 29px;
+            line-height: 56px;
+        }
+        .con h3{
+            font-size: 45px;
+            line-height: 55px;
+            margin: 1em 0 0;
+            width : 33vh;
+        }
+        .con p{
+            font-family: 'AvenirNextLTW01-Medium', 'Avenir', sans-serif;
+            max-width : 35vh;
+        }
+        .con a{
+            position: relative;
+            background: #ef4923;
+            padding: 11px 20px;
+            border-radius: 20px;
+            top: 10px;
+            color: #fff;
+        }
+        /* //////////////content//////////////// */
+
+        /* ///////////////footer//////////////// */
+        footer{
+            font-size: 14px;
+        }
+        .footer{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: inline-block;
+        }
+        .foot{
+            margin: 0 20px;
+            color: #fff;
+        }
+        #foot5{
+            background: url(img/share-twitter.svg);
+            display: inline-block;
+            overflow: hidden;
+            text-indent: 100%;
+            height: 11px;
+            width: 14px;
+            margin : 0 10px;
+        }
+        #foot6{
+            background: url(img/share-instagram.svg);
+            display: inline-block;
+            overflow: hidden;
+            text-indent: 100%;
+            height: 11px;
+            margin : 0 10px;
+            width: 11px;
+        }
+        #foot7{
+            background: url(img/share-facebook.svg);
+            display: inline-block;
+            overflow: hidden;
+            text-indent: 100%;
+            height: 11px;
+            margin : 0 10px;
+            width: 12px;
+        }
+        #foot1{
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: inline-block;
+            color: #fff;
+        }
+        #foot8{
+            background: transparent;
+            border: none;
+            color: #fff;
+            outline-width: 0;
+        }
+        #foot8 option{
+            color: #000;
+        }
+
+        /* ///////////////footer//////////////// */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="nav1">the dam truth</a>
+            <a href="#" class="nav2">discover blue heart</a>
+            <a href="#" class="nav3">patagonia</a>
+            <a href="#" class="nav4">take action</a>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="center">
+            <h1>blue heart</h1>
+            <p>the fight for europe's last wild rivers</p>
+            <a href="#">watch the film</a>
+        </div>
+        <div class="mountain">
+            <img src="img/dam.png" alt="1" class="mountain1">
+            <img src="img/trees_right.png" alt="2" class="mountain2">
+            <img src="img/trees_left.png" alt="3" class="mountain3">
+            <img src="img/river.png" alt="4" class="mountain4">
+        </div>
+        <div class="cloud">
+            <img src="img/cloud_new_1.png" alt="cloud1" class="cloud1">
+            <img src="img/cloud_new_3.png" alt="cloud2" class="cloud2">
+            <img src="img/cloud_new_4.png" alt="cloud3" class="cloud3">
+        </div>
+    </section>
+
+
+    <content>
+        <div class="con" id="con1">
+            <h4>01</h4>
+            <h3>The Dam Truth</h3>
+            <p>Dams are Dirty and so is the hydropower they create.</p>
+            <a href="#">LEARN</a>
+        </div>
+        <div class="con" id="con2">
+            <h4>02</h4>
+            <h3>Discover the Blue Heart</h3>
+            <p>The Balkan region has preserved the last wild rivers on the European continent.</p>
+            <a href="#">EXPLORE</a>
+        </div>
+        <div class="con" id="con3">
+            <h4>03</h4>
+            <h3>Save the Blue Heart</h3>
+            <p>Tell International Banks to Stop Investing in the Destruction of Europe’s Last Wild Rivers.</p>
+            <a href="#">TAKE ACTION</a>
+        </div>
+    </content>
+
+
+    <footer>
+        <a href="#" id="foot1">a parm league original</a>
+        <div class="footer">
+            <a href="#" class="foot" id="foot2">patagonia.com</a>
+            <a href="#" class="foot" id="foot3">watch the trailer</a>
+            <a href="#" class="foot" id="foot4">get the word out</a>
+            <a href="#" class="foot" id="foot5">twitter</a>
+            <a href="#" class="foot" id="foot6">insta</a>
+            <a href="#" class="foot" id="foot7">facebook</a>
+            <select id="foot8" onchange="var href=this[this.selectedIndex].value;if(href!=''){window.location.href=href};">
+                    <option value="#">
+                      en
+                    </option>
+                    <option value="#">
+                      de
+                    </option>
+                    <option value="#">
+                      fr
+                    </option>
+                    <option value="#">
+                      it
+                    </option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>
